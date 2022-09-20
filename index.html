@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+		textarea{overflow-y:scroll;}
+		</style>
+	</head>
+	<body>
+		<table border="1">
+			<caption>信息统计表</caption>
+			<tr>
+			<td>姓名</td>
+			<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+			<td>年龄</td>
+			<td><input type="age" name="userage"></td>
+			</tr>
+			<tr>
+			<td>性别</td>
+			<td>
+			<input type="radio" value="boy" name="sex"checked/>男
+			<input type="radio" value="girl" name="sex"/>女
+			</td> 
+			</tr>
+			<tr>
+			<td>爱好</td>
+			<td>
+			<input type="checkbox" value="travel" name="hobby">旅游
+			<input type="checkbox" value="mountaineering" name="hobby">登山
+			<input type="checkbox" value="bodybuilding" name="hobby">健身
+			<input type="checkbox" value="surf the internet" name="hobby">上网
+			<input type="checkbox" value="swimming" name="hobby">游泳
+			</td>
+			</tr>
+			<tr>
+			<td>学历</td>
+			<td>
+			<select>
+			<option name="选项的值"selected>--请选择--</option>
+			<option value="选项的值">专科</option>
+			<option value="选项的值">本科</option>
+			<option value="选项的值">硕士</option>
+			<option value="选项的值">博士及以上</option>
+			</select>
+			</td>
+			</tr>
+			<tr>
+			<td>自我介绍：</td>
+			<td>
+			<textarea name="textarea" clos="100" rows="8"style="overflow-y:scroll;">自我介绍：</textarea>
+			</td>
+			</tr>
+			<tr>
+			<td> </td>
+			<td>
+			<input type="submit">
+			<input type="reset">
+			</td>
+			</tr>
+		</table>
+	</body>
+</html>
