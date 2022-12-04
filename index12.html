@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	<style>
+	*{
+	margin:0;
+	padding:0;
+	}
+	.box{
+	width:200px;
+	height:200px;
+	background-color:#ff6700;
+	margin:100px auto;
+	text-align:center;
+	}
+	input{
+	width:180px;
+	height:30px;
+	color:red;
+	background-color: white;
+	margin:10px auto;
+	}
+	</style>
+	</head>
+	<body>
+	<div class="box">
+	<input type="text" id="text1">
+	<input type="text" id="text2">
+	<input type="button" value="复制" onclick="copy()">
+	</div><br>
+	<a href="#" style="display: none;">复制成功</a>
+	<script type="text/javascript">
+	function copy() {
+	document.getElementById("text2").value = document.getElementById("text1").value;
+	if ($("a").css("display") != "red") {
+     $("a").css("display", "red");
+	} else {
+	 $("a").css("display", "none");
+	     }
+	}
+	    </script>
+	</body>
+</html>
